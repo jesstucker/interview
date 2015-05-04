@@ -11,9 +11,13 @@ use App\Student;
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', function(){
+    return View::make('home');
+});
 
-Route::get('home', 'HomeController@index');
+Route::get('home', function(){
+    return View::make('home');
+});
 
 Route::get('edit-student/{id?}', function($id=false){
     $student = App\Student::find($id);
