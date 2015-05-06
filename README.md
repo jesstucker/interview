@@ -4,8 +4,10 @@ This repository contains a standard Laravel 5 project, installable via
 
     git checkout
     composer install
+    php artisan migration
+    php artisan db:seed
 
-To be considered for an interview, please
+Please
 
 1. Provide a solution and/or pull request for [Issue #1](https://github.com/cupdx/interview/issues/1)
 
