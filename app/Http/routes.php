@@ -38,6 +38,7 @@ Route::post('edit-student', ['as'=>'edit-student-post',function(){
     $student->first_name = Request::get('first_name'); 
     $student->last_name  = Request::get('last_name');
     $student->dob        = Request::get('dob');
+    $student->GPA        = Request::get('GPA');
     $student->student_id = Request::get('student_id');
     $student->save();
     
