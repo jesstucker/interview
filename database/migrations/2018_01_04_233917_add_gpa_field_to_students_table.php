@@ -14,7 +14,7 @@ class AddGpaFieldToStudentsTable extends Migration {
 	{
 		Schema::table('students', function(Blueprint $table)
 		{
-			//
+			$table->string('GPA')->default('4.0');
 		});
 	}
 

@@ -29,11 +29,15 @@
                                 <li>
                                     <label for="student_id"><strong>Student ID</strong></label>
                                     <input
-                                    @if($student->id)
+                                    {{-- @if($student->id)
                                     disabled=disabled
-                                    @endif
+                                    @endif --}}
                                      value="{{{$student->student_id}}}" type="text" name="student_id" class="form-control">
                                 </li>
+                                <li>
+                                    <label for="GPA"><strong>GPA</strong></label>
+                                    <input value="{{{$student->GPA}}}" type="text" name="GPA" class="form-control">
+                                </li> 
                                 <li>
                                     <label for="dob"><strong>Date of Birth</strong></label>
                                     <input value="{{{$student->dob}}}" type="text" name="dob" class="form-control">
