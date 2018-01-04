@@ -29,7 +29,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach($students as $student); ?>
+                            <?php foreach($students as $student): ?>
                                 <tr>
                                     <td>{{{$student->first_name}}}</td>
                                     <td>{{{$student->last_name}}}</td>
@@ -37,6 +37,7 @@
                                     <td>{{{$student->dob}}}</td>
                                     <td><a href="/edit-student/{{$student->id}}" class="btn btn-info">Edit Student</a></td>
                                 </tr>
+                            <?php endforeach ?>
                         </tbody>
                     </table>
                 </div>
