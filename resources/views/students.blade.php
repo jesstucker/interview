@@ -24,6 +24,7 @@
                                 <th>First Name</th>
                                 <th>Last Name</th>
                                 <th>Student ID</th>
+                                <th>GPA</th>
                                 <th>Date of Birth</th>
                                 <th>&nbsp;</th>
                             </tr>
@@ -34,6 +35,7 @@
                                     <td>{{{$student->first_name}}}</td>
                                     <td>{{{$student->last_name}}}</td>
                                     <td>{{{$student->student_id}}}</td>
+                                    <td>{{{$student->GPA}}}</td>
                                     <td>{{{$student->dob}}}</td>
                                     <td><a href="/edit-student/{{$student->id}}" class="btn btn-info">Edit Student</a></td>
                                 </tr>
